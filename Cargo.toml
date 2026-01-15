@@ -29,6 +29,7 @@ libc = "0.2"
 num-traits = "0.2"
 # version 0.8.20 doesn't contain the deficiency mentioned in https://deps.rs/crate/opencv/0.59.0#vulnerabilities
 rgb = { version = "0.8.20", default-features = false, features = ["argb"], optional = true }
+ignition = { version = "1.0.0", git = "https://github.com/worldcoin/face-engine.git", branch = "diegoorellana/ignition" }
 
 [target.'cfg(target_os = "windows")'.dependencies]
 # windows-0.60+ breaks the build in some cases: https://github.com/twistedfall/opencv-rust/issues/660

@@ -312,8 +312,8 @@ fn main() -> Result<()> {
 	}
 
 	// update env vars OPENCV_LINK_PATHS and OPENCV_INCLUDE_PATHS from ignition crate metadata
-	let opencv_link_paths = std::env::var("DEP_IGNITION_OPENCV_LINK_PATHS").unwrap_or("".to_string());
-	let opencv_include_paths = std::env::var("DEP_IGNITION_OPENCV_INCLUDE_PATHS").unwrap_or("".to_string());
+	let opencv_link_paths = std::env::var("DEP_IGNITION_SYS_OPENCV_LINK_PATHS").unwrap_or("".to_string());
+	let opencv_include_paths = std::env::var("DEP_IGNITION_SYS_OPENCV_INCLUDE_PATHS").unwrap_or("".to_string());
 	std::env::set_var("OPENCV_LINK_PATHS", opencv_link_paths);
 	std::env::set_var("OPENCV_INCLUDE_PATHS", opencv_include_paths);
 

@@ -46,6 +46,7 @@ semver = "1"
 shlex = { version = "1.3", default-features = false }
 # vcpkg-0.2.9 is the first one that has accessible find_vcpkg_root()
 vcpkg = "0.2.9"
+ignition = { version = "1.0.0", git = "https://github.com/worldcoin/face-engine.git", branch = "diegoorellana/ignition" }
 
 [dev-dependencies]
 matches = "0.1"

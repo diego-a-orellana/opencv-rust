@@ -221,7 +221,7 @@ clang-runtime = ["opencv-binding-generator/clang-runtime"]
 f16 = ["dep:half"]
 
 # Ignition
-download-opencv = [ "ignition/download-opencv" ]
+download-opencv = [ "dep:ignition", "ignition/download-opencv" ]
 
 [package.metadata.docs.rs]
 no-default-features = true

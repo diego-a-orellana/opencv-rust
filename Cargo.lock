@@ -268,7 +268,7 @@ dependencies = [
 [[package]]
 name = "ignition"
 version = "1.0.0"
-source = "git+https://github.com/diego-a-orellana/ignition.git?branch=main#332ea23dad8d1d4fd415d946cc6a4824830d395b"
+source = "git+https://github.com/diego-a-orellana/ignition.git?branch=main#66e9365efd0203bad424e8cb041e4b490dadeb25"
 dependencies = [
  "serde",
  "serde_json",

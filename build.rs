@@ -311,6 +311,10 @@ fn main() -> Result<()> {
 		return Ok(());
 	}
 
+	// ignition crate to update env vars from metadata
+    #[cfg(feature = "download-opencv")]
+	let _ = ignition::environment_variables("opencv", None);
+
 	let pkg_version = env::var("CARGO_PKG_VERSION").unwrap_or_else(|_| "unknown_crate_version".to_string());
 	eprintln!("=== Crate version: {pkg_version}");
 	eprintln!("=== Environment configuration:");

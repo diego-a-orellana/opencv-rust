@@ -457,7 +457,7 @@ dependencies = [
 [[package]]
 name = "ignition"
 version = "1.0.0"
-source = "git+https://github.com/diego-a-orellana/ignition.git?branch=release/1.0.0#969361bc4d89e984e847374060d30ae9a6086f5c"
+source = "git+https://github.com/diego-a-orellana/ignition.git?branch=release/1.0.0#b756656f7fa020a6d0dd1b396594747bbb773d58"
 dependencies = [
  "flate2",
  "ignition-macros",
@@ -469,7 +469,7 @@ dependencies = [
 [[package]]
 name = "ignition-macros"
 version = "1.0.0"
-source = "git+https://github.com/diego-a-orellana/ignition.git?branch=release/1.0.0#969361bc4d89e984e847374060d30ae9a6086f5c"
+source = "git+https://github.com/diego-a-orellana/ignition.git?branch=release/1.0.0#b756656f7fa020a6d0dd1b396594747bbb773d58"
 dependencies = [
  "proc-macro2",
  "quote",

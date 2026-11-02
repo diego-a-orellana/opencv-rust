@@ -455,27 +455,29 @@ dependencies = [
 ]
 
 [[package]]
-name = "ignition"
+name = "ignition-macros-rs"
 version = "1.0.0"
-source = "git+https://github.com/diego-a-orellana/ignition.git?branch=release/1.0.0#706202df7441779191259aeace5670e04aa083c4"
-dependencies = [
- "flate2",
- "ignition-macros",
- "tar",
- "thiserror",
- "ureq",
-]
-
-[[package]]
-name = "ignition-macros"
-version = "1.0.0"
-source = "git+https://github.com/diego-a-orellana/ignition.git?branch=release/1.0.0#706202df7441779191259aeace5670e04aa083c4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a564464cdc978e2069a96677833d688497461bf8717efefdeb5235955cfe345f"
 dependencies = [
  "proc-macro2",
  "quote",
  "serde",
  "serde_yaml",
  "syn 2.0.114",
+]
+
+[[package]]
+name = "ignition-rs"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ffd0c67bbac6b563f85cba6106730438fd285a58a3fdad1cccca1fb29eb7167b"
+dependencies = [
+ "flate2",
+ "ignition-macros-rs",
+ "tar",
+ "thiserror",
+ "ureq",
 ]
 
 [[package]]
@@ -607,7 +609,7 @@ dependencies = [
  "cc",
  "dunce",
  "half",
- "ignition",
+ "ignition-rs",
  "jobserver",
  "libc",
  "matches",
